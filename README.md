@@ -1,6 +1,6 @@
-# 🚀 NovaCart Data Engineering Project
+#  NovaCart Data Engineering Project
 
-## 📌 Overview
+##  Overview
 
 This project implements an **end-to-end data pipeline** using **Databricks, PySpark, and Delta Lake** following the **Medallion Architecture (Bronze → Silver → Gold)**.
 
@@ -8,7 +8,7 @@ The pipeline ingests raw data from Azure Blob Storage, cleans and transforms it,
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 Azure Blob Storage
@@ -22,7 +22,7 @@ Azure Blob Storage
 
 ---
 
-## ⚙️ Tech Stack
+##  Tech Stack
 
 * **Databricks**
 * **PySpark**
@@ -32,7 +32,7 @@ Azure Blob Storage
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 DE_mini_project_NovaCart
@@ -57,7 +57,7 @@ DE_mini_project_NovaCart
 
 ---
 
-## 🥉 Bronze Layer (Raw Data)
+##  Bronze Layer (Raw Data)
 
 * Ingests data directly from **Azure Blob Storage**
 * Stores raw, unprocessed data
@@ -72,7 +72,7 @@ DE_mini_project_NovaCart
 
 ---
 
-## 🥈 Silver Layer (Data Cleaning & Transformation)
+##  Silver Layer (Data Cleaning & Transformation)
 
 * Data is cleaned and standardized
 * Handles:
@@ -84,21 +84,21 @@ DE_mini_project_NovaCart
 
   * `is_valid` flag for data quality tracking
 
-### 🔥 Parallel Processing
+###  Parallel Processing
 
 All silver transformations are designed to run **independently and in parallel** using Databricks Jobs.
 
 ---
 
-## 🥇 Gold Layer (Analytics Layer)
+##  Gold Layer (Analytics Layer)
 
-### ⭐ Dimension Tables
+###  Dimension Tables
 
 * `dim_customers`
 * `dim_products`
 * `dim_date`
 
-### ⭐ Fact Table
+###  Fact Table
 
 * `fact_orders`
 * Includes:
@@ -109,7 +109,7 @@ All silver transformations are designed to run **independently and in parallel**
 
 ---
 
-## 📊 KPI Metrics
+##  KPI Metrics
 
 The project generates key business KPIs:
 
@@ -126,7 +126,7 @@ The project generates key business KPIs:
 
 ---
 
-## 🔄 Data Pipeline (Workflow)
+##  Data Pipeline (Workflow)
 
 * Built using **Databricks Jobs & Workflows**
 * Steps:
@@ -139,7 +139,7 @@ The project generates key business KPIs:
 
 ---
 
-## 💡 Key Features
+##  Key Features
 
 * ✔ End-to-end ETL pipeline
 * ✔ Medallion Architecture implementation
@@ -151,7 +151,7 @@ The project generates key business KPIs:
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 
 1. Upload data to Azure Blob Storage
 2. Run Bronze ingestion notebook
@@ -161,7 +161,7 @@ The project generates key business KPIs:
 
 ---
 
-## 📈 Future Improvements
+##  Future Improvements
 
 * Add real-time streaming (Structured Streaming)
 * Implement CI/CD pipeline
@@ -170,12 +170,8 @@ The project generates key business KPIs:
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Gaurav Mishra**
 
----
 
-## ⭐ If you like this project
-
-Give it a ⭐ on GitHub!
